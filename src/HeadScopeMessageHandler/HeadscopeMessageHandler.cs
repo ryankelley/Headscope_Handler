@@ -28,7 +28,7 @@ namespace HeadScopeMessageHandler
             Func<HttpRequestMessage, IDictionary<string, string>> addExtraAttributes = null)
         {
             if(string.IsNullOrEmpty(baseUrl))
-                throw new ArgumentNullException(nameof(baseUrl), "baseUrl is required to make requests");
+                throw new ArgumentNullException("baseUrl", "baseUrl is required to make requests");
 
 
             _appKey = appKey;
